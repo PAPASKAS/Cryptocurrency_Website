@@ -1,3 +1,153 @@
 *{
     text-decoration:none;
 }
+
+@font-face {
+    font-family: "inter-semibolds";
+    src: url(../../Source/Fonts/Inter-SemiBold.ttf);
+}
+@font-face {
+    font-family: "rubik";
+    src: url(../../Source/Fonts/Rubik-Regular_0.ttf);
+}
+@font-face {
+    font-family: "rubik-medium";
+    src: url(../../Source/Fonts/Rubik-Medium.ttf);
+}
+@font-face {
+    font-family: "rubik-bold";
+    src: url(../../Source/Fonts/Rubik-Bold_0.ttf);
+}
+
+
+
+
+/*header*/
+.header .logo a{
+    font-family: "Inter-semibold";
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;    
+}
+.header_nav li a{
+    font-family: "Rubik";
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+}
+.header_nav span{
+    font-family: "Rubik-medium";
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;    
+}
+.hamburger li{
+    font-family: "Rubik";
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+}
+.hamburger li:first-of-type,
+.hamburger li:nth-of-type(2){
+    font-family: "Rubik-medium";
+    text-decoration:underline;
+}
+
+
+
+
+/*intro*/
+.intro .left_side div:first-of-type span:first-of-type{
+    font-family: "Rubik-medium";
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #0D0D2B;    
+}
+.intro .left_side div:first-of-type span:last-of-type{
+    font-family: "Rubik";
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;    
+}
+.intro p:first-of-type{
+    font-family: "Rubik-bold";
+    font-size: 64px;
+    line-height: 76px;
+    color: #FFFFFF;    
+}
+.intro p:last-of-type{
+    font-family: "Rubik";
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    color: #E0E0E0;    
+}
+
+
+
+
+
+
+/*advertising*/
+.advertising .top_side h2{
+    font-family: "Rubik-bold";
+    font-size: 40px;
+    line-height: 150%;
+    color: #FFFFFF;    
+}
+.advertising .top_side p{
+    font-family: "Rubik";
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    color: #E0E0E0;    
+}
+.advertising .bottom_side h2{
+    font-family: "Rubik-bold";
+    font-size: 40px;
+    line-height: 150%;
+    color: #FFFFFF;    
+}
+.advertising .bottom_side p{
+    font-family: "Rubik";
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    color: #E0E0E0;    
+}
+
+
+
+
+/*calculator*/
+.top_calculator h2{
+    font-family: "Rubik-bold";
+    font-size: 40px;
+    line-height: 150%;
+    color: #FFFFFF;    
+}
+.top_calculator p{
+    font-family: "Rubik";
+    font-size: 18px;
+    line-height: 150%;
+    color: #E0E0E0;    
+}
+.top_calculator input[type=number]{
+    font-family: "Rubik";
+    font-size: 20px;
+    line-height: 150%;
+    color: #0D0D2B;
+    mix-blend-mode: normal;
+}
+.top_calculator input[type=button]{
+    font-family: "Rubik-medium";
+    font-size: 18px;
+    line-height: 150%;
+    color: #FFFFFF;    
+}

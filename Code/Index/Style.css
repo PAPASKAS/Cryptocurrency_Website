@@ -4,7 +4,7 @@
     box-sizing:border-box;
 }
 .container{
-    max-width:;
+    max-width:1100px;
     margin:0 auto;
     padding:0 10px;	
 }
@@ -17,4 +17,248 @@ body{
 .background_image{
     max-width:1440px;
     margin:0 auto;
+    background: url("../../Source/Img/intro\ line.svg") no-repeat center 280px,
+                url("../../Source/Img/intro\ line\ 2.svg") no-repeat right 390px;
+}
+
+
+
+
+
+/*header*/
+.header{
+    margin:60px 0;
+    display:flex;
+    justify-content: space-between;
+}
+.logo{
+    display:flex;
+    align-items:center;
+    gap:16px;
+}
+.logo img{/*vert align img*/
+    display:flex;
+}
+.header_nav{
+    display:flex;
+    align-items:center;
+    gap:56px;
+}
+.header_nav ul{
+    list-style: none;
+    display:flex;
+    align-items:center;
+    gap:32px;
+}
+.header_nav li{
+    transition:500ms;
+}
+.header_nav li:hover{
+    background:rgba(255, 255, 255, 0.1);
+    border-radius:15px;
+    padding:2px 5px;
+}
+.header_nav > span{/*login reg*/
+    display:flex;
+    align-items:center;
+}
+.header_nav > span > span:first-child{/*border-right and align login*/
+    height: 24px;
+    display:flex;
+    align-items:center;
+    padding-right:24px;
+    margin-right:24px;
+    border-right:1px solid rgba(242, 242, 242, 0.3);
+}
+.header_nav .register span{
+    background: #3671E9;
+    border-radius: 32px;
+    width: 130px;
+    height: 52px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.hamburger{
+    display:none;
+}
+.hamburger img{
+    cursor:pointer;
+}
+.hamburger nav{
+    overflow:hidden;
+    display:none;
+    height: 185px;
+    position:absolute;
+    right:15px;
+    background:#252540;
+    border:1px solid white;
+    padding:7px 12px;
+}
+.hamburger ul{
+    list-style: none;
+}
+
+
+
+/*intro*/
+.intro .left_side{
+    background:url("../../Source/Img/intro.svg") no-repeat right center;
+    width: 100%;
+    height: 600px;
+    display:grid;
+    align-items:center
+}
+.top_intro{
+    max-width: 365px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 32px;
+    display:flex;
+    align-items:center;
+    gap:16px;
+    white-space: nowrap;
+}
+.intro .left_side div:first-of-type span:first-of-type{
+    background: #FFFFFF;
+    border-radius: 32px;
+    height: 32px;
+    width: 133px;
+    margin-left:4px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+.intro .left_side div:first-of-type span:last-of-type{
+    padding-right:11px;
+}
+.intro p:first-of-type{
+    margin:24px 0;/*padding between text*/
+    max-width:588px;
+}
+.intro p:last-of-type{
+    margin-bottom:32px;
+    max-width:435px;
+}
+.intro a img{/*зона нажатия на кнопку*/
+    border-radius:60px;
+}
+
+
+
+
+
+/*advertising*/
+.advertising_block{
+    padding:100px 0;
+    max-width:1440px;
+    margin:0 auto;
+    height: 865px;
+    background: url("../../Source/Img/advertising\ background.svg") no-repeat right 25%,
+                url("../../Source/Img/advertising\ background\ 1.svg") no-repeat left bottom,
+                url("../../Source/Img/advertising\ background\ 2.svg") no-repeat right 84%;
+}
+.advertising .top_side{
+    display:flex;
+    white-space: nowrap;
+    flex-wrap: wrap;
+    gap:20px;/*min gap*/
+    justify-content: space-between;
+}
+.advertising .top_side > span{
+    display:flex;
+    align-items:flex-end;
+    gap:24px;
+}
+.advertising .top_side > span p:last-of-type{
+    margin-top:4px;
+}
+.advertising .bottom_side{
+    background:url(../../Source/Img/advertising\ 1.svg) no-repeat left center;
+    height: 585px;
+    display:flex;
+    justify-content: flex-end;
+    align-items:center;
+}
+.advertising .bottom_side h2{
+    max-width:480px;
+}
+.advertising .bottom_side p{
+    margin:24px 0 32px 0;
+    max-width:480px;
+}
+
+
+
+
+/*calcultor*/
+.calculator_block .top_background{
+    height: 457px;
+    display:grid;
+    text-align:center;
+    align-items:flex-end;
+
+}
+.calculator_block .bottom_background{
+    background:#F8F9FB;
+    height: 600px;
+}
+.calculator_block .top_calculator{
+    width: 942px;
+    border:1px solid red;
+    height: 155px;
+    margin:0 auto;
+    background: #FBFCFE;
+    border-radius: 16px 16px 0px 0px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+.calculator_block .bottom_calculator{
+    width: 942px;
+    background: #FFFFFF;
+    mix-blend-mode: overlay;
+    box-shadow: 0px 80px 40px #391777;
+    border-radius: 0px 0px 16px 16px;
+    height: 216px;
+    margin:0 auto;
+}
+.top_calculator form{
+    display:flex;
+    align-items:center;
+    gap:48px;
+}
+.top_calculator input[type=button]{
+    width: 147px;
+    height: 59px;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    background: #3671E9;
+    border-radius: 32px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+.top_calculator form input:first-of-type{
+    width: 403px;
+    height: 46px;   
+    border:none;
+    outline:none;
+    border-bottom:1px solid #E0E0E0;
+}
+.top_calculator form select{
+    border:none;
+    outline:none;
+    height: 46px;
+    width: 200px;
+    /* border-bottom:1px solid #E0E0E0; */
+}
+::selection{
+    border:1px solid red;
+}
+.top_calculator form option{
+    border:none;
+    outline:none;
 }

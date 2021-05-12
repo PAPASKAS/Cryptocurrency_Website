@@ -1,0 +1,73 @@
+/*header*/
+@media(max-width:992px){
+    .header_nav{
+        display:none;
+    }
+    .hamburger{
+        display:block;
+    }
+    .header{
+        margin:30px 0;
+    }
+}
+
+
+
+/*intro*/
+@media(max-width:576px){
+    .intro .left_side{
+        background:url("../../Source/Img/intro.svg") no-repeat center;
+    }
+    .intro_block .container{
+        padding:0;
+    }
+    .intro .left_side > div{
+        padding:0 10px
+    }
+    .intro .left_side div:first-of-type span:first-of-type{
+        font-size: 14px;
+    }
+    .intro .left_side div:first-of-type span:last-of-type{
+        font-size: 14px;
+    }
+    .intro p:first-of-type{
+        font-size: 54px;
+        line-height: 66px;  
+    }
+    .top_intro{
+        max-width: 300px;
+        height: 40px;
+        gap:10px;
+    }
+}
+
+
+
+/*advertising*/
+@media(max-width:992px){
+    .advertising_block{
+        background: url("../../Source/Img/advertising\ background.svg") no-repeat right 25%,
+                    url("../../Source/Img/advertising\ background\ 1.svg") no-repeat left bottom,
+                    url("../../Source/Img/advertising\ background\ 2.svg") no-repeat right 60%;
+    }
+    
+    .advertising_block .container{
+        padding:0;
+    }
+    .advertising .bottom_side > div{
+        padding: 0 10px;
+    }
+    .advertising .top_side{
+        justify-content: space-evenly;
+    }
+    .advertising .top_side > span{
+        flex:1;
+        display:flex;
+        justify-content: center;   
+    }
+    @media (max-width:576px){
+        .advertising .bottom_side{
+            background:url(../../Source/Img/advertising\ 1.svg) no-repeat center;
+        }
+    }
+}
