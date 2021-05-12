@@ -1,0 +1,20 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.container{
+    max-width:;
+    margin:0 auto;
+    padding:0 10px;	
+}
+span{
+    display:inline-block;
+}
+body{
+    background: #0D0D2B;
+}
+.background_image{
+    max-width:1440px;
+    margin:0 auto;
+}
