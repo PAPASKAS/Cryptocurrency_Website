@@ -71,3 +71,92 @@
         }
     }
 }
+
+
+
+
+
+/*calculator*/
+@media(max-width:992px){
+    .top_calculator,
+    .bottom_calculator,
+    .top_background > *{
+        display:none
+    }
+}
+
+
+
+/*crypto*/
+@media(max-width:1200px){
+    .crypto > div{
+        justify-content: space-evenly;
+    }
+    @media (max-width:576px) {
+        .shadow_crypto span{
+            width:250px;
+        }
+        .crypto_item{
+            width:250px;
+        }
+        .crypto_item p{
+            padding:0 10px;
+        }
+        .crypto > h2{
+            font-size: 30px;
+            line-height: 140%;
+        }
+    }
+}
+
+
+/*features*/
+@media(max-width:1200px){
+    .features_item{
+        text-align:center;
+    }
+    .features_item .description{
+        margin:24px auto 32px auto;
+    }
+    .features_item .background{
+        display:none;
+    }
+    .features_item:not(:last-of-type){
+        margin-bottom:0px;
+    }
+    .features_block > div > h2{
+        padding:100px 10px 50px 10px;
+        font-size: 30px;
+        line-height: 130%;
+    }
+}
+
+
+
+
+
+
+
+
+/*start mining*/
+@media (max-width:1200px) {
+    .start_mining_block{
+        height: 600px;
+    }
+    .start_mining{
+        height: 400px;
+        max-width: 1200px;
+        display: grid;
+        gap:0px;
+        padding:0 20px;
+        justify-content: center;
+    }
+    .start_mining form{
+        max-width: 566px;
+    }
+    @media (max-width:992px) {
+        .start_mining_block{
+            display:none;
+        }
+    }
+}

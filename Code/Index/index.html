@@ -136,26 +136,142 @@
             <div class=top_calculator>
                 <form action="">
                     <input type="number" placeholder="Enter your hash rate" reauired>
-                    <!-- <select name="" id="">
-                        <option value="" selected>TH/s</option>
-                        <option value="">TT/s</option>
-                    </select> -->
-                    <input type="text" list="asd">
-                    <input type="button" value="calculate">
+                    <div class=select_calculator >
+                        <div onclick="select_hash()">
+                            <p>TH/s</p>
+                            <img src="../../Source/Img/Arrow Down.svg" alt="">
+                        </div>
+                        <div class=option_calculator>
+                            <div>
+                                <p>TH/s</p>
+                                <p>GH/s</p>
+                                <p>MH/s</p>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="button" value="Calculate" onclick=calculator()>
                 </form>
             </div>
         </div>
         <div class=bottom_background>
-            <div class=bottom_calculator>
-                <div>ESTIMATED 24 HOUR REVENUE:</div>
-                <div>
-                    <span>0.055 130 59 ETH</span>
-                    <span>($1275)</span>
+            <div>
+                <div class=mix_mode_bottom_calculator>
+                    <!--shadow-->
                 </div>
-                <div>Revenue will change based on mining difficulty and Ethereum price.</div>
+                <div class=bottom_calculator>
+                    <p>ESTIMATED 24 HOUR REVENUE:</p>
+                    <p>
+                        <span>0.055 130 59 ETH</span>
+                        <span>($1275)</span>
+                    </p>
+                    <p>Revenue will change based on mining difficulty and Ethereum price.</p>
+                </div>
             </div>
         </div>
     </div>
+
+    <div class=crypto_block>
+        <div class="container">
+            <div class="crypto">
+                <h2>Trade securely and market the high growth cryptocurrencies.</h2>
+                <div class=shadow_crypto>
+                    <span>
+                    </span>
+                    <span>
+                    </span>
+                    <span>
+                    </span>
+                </div>
+                <div>
+                    <span class=crypto_item onmouseover="crypto_over(0)" onmouseout="crypto_out(0)">
+                        <img src="../../Source/Img/bitcoin.svg" alt="">
+                        <div>
+                            <span><h3 id=name_crypto>Bitcoin</h3></span>
+                            <span id=abbreviated_name>BTC</span>
+                        </div>
+                        <p id=description_crypto>Digital currency in which a record of transactions is maintained.</p>
+                        <a href="#"><img src="../../Source/Img/Arrow Right.svg" alt="" id=button_crypto></a>
+                    </span>
+                    <span class=crypto_item  onmouseover="crypto_over(1)" onmouseout="crypto_out(1)">
+                        <img src="../../Source/Img/ethereum.svg" alt="">
+                        <div>
+                            <span><h3 id=name_crypto>Ethereum</h3></span>
+                            <span id=abbreviated_name>ETH</span>
+                        </div>
+                        <p id=description_crypto>Blockchain technology to create and run decentralized digital applications.</p>
+                        <a href="#"><img src="../../Source/Img/Arrow Right.svg" alt="" id=button_crypto></a>
+                    </span>
+                    <span class=crypto_item  onmouseover="crypto_over(2)" onmouseout="crypto_out(2)">
+                        <img src="../../Source/Img/litecoin.svg" alt="">
+                        <div>
+                            <span><h3 id=name_crypto>Litecoin</h3></span>
+                            <span id=abbreviated_name>LTC</span>
+                        </div>
+                        <p id=description_crypto>Cryptocurrency that enables instant payments to anyone in the world.</p>
+                        <a href="#"><img src="../../Source/Img/Arrow Right.svg" alt="" id=button_crypto></a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="features_block">
+        <div class="container_screen">
+            <h2>Market sentiments, portfolio, and run the infrastructure of your choice</h2>
+            <div class=features_item>
+                <span class=text>
+                    <h3 class=heading>Invest Smart</h3>
+                    <p class=description>Get full statistic information about the behaviour of buyers and sellers will help you to make the decision.</p>
+                    <a href="#"><img src="../../Source/Img/advertising button.svg" alt=""></a>
+                </span>
+                <span class=background>
+                    <img src="../../Source/Img/features 1.png" alt="">
+                </span>
+            </div>
+            <div class=features_item>
+                <span class=background>
+                    <img src="../../Source/Img/features 2.png" alt="">
+                </span>
+                <span class=text>
+                    <h3 class=heading>Detailed Statistics</h3>
+                    <p class=description>View all mining related information in realtime, at any point at any location and decide which polls you want to mine in.</p>
+                    <a href="#"><img src="../../Source/Img/advertising button.svg" alt=""></a>
+                </span>
+                
+            </div>
+            <div class=features_item>
+                <span class=text>
+                    <h3 class=heading>Grow your profit and track your investments</h3>
+                    <p class=description>Use advanced analytical tools. Clear TradingView charts let you track current and historical profit investments.</p>
+                    <a href="#"><img src="../../Source/Img/advertising button.svg" alt=""></a>
+                </span>
+                <span class=background>
+                    <img src="../../Source/Img/features 3.png" alt="">
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="start_mining_block">
+        <div class="start_mining">
+            <span class=left_side>
+                <h3>Start mining now</h3>
+                <p>Join now with CRAPPO to get the latest news and start mining now</p>
+            </span>
+            <span class=right_side>
+                <form action="">
+                    <input type="email" placeholder="Enter_your_email" required>
+                    <button>Subscribe</button>
+                </form>
+            </span>
+        </div>
+    </div>
+
+
+
+
+
+
 
 
     <script src="Script.js"></script>

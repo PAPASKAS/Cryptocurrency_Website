@@ -8,6 +8,10 @@
     margin:0 auto;
     padding:0 10px;	
 }
+.container_screen{
+    max-width:1440px;
+    margin:0 auto;
+}
 span{
     display:inline-block;
 }
@@ -198,15 +202,18 @@ body{
     display:grid;
     text-align:center;
     align-items:flex-end;
-
 }
 .calculator_block .bottom_background{
     background:#F8F9FB;
-    height: 600px;
+    height: 316px;
 }
-.calculator_block .top_calculator{
+.calculator_block > div > p{
+    margin:0 auto;
+    max-width: 642px;
+    padding:0 10px;
+}
+.top_calculator{
     width: 942px;
-    border:1px solid red;
     height: 155px;
     margin:0 auto;
     background: #FBFCFE;
@@ -215,19 +222,17 @@ body{
     align-items:center;
     justify-content: center;
 }
-.calculator_block .bottom_calculator{
-    width: 942px;
-    background: #FFFFFF;
-    mix-blend-mode: overlay;
-    box-shadow: 0px 80px 40px #391777;
-    border-radius: 0px 0px 16px 16px;
-    height: 216px;
-    margin:0 auto;
-}
 .top_calculator form{
     display:flex;
     align-items:center;
     gap:48px;
+}
+.top_calculator form input[type=number]{
+    width: 403px;
+    height: 46px;   
+    border:none;
+    outline:none;
+    border-bottom:1px solid #E0E0E0;
 }
 .top_calculator input[type=button]{
     width: 147px;
@@ -241,24 +246,233 @@ body{
     align-items:center;
     justify-content: center;
 }
-.top_calculator form input:first-of-type{
-    width: 403px;
-    height: 46px;   
-    border:none;
-    outline:none;
-    border-bottom:1px solid #E0E0E0;
-}
-.top_calculator form select{
+.select_calculator{
     border:none;
     outline:none;
     height: 46px;
     width: 200px;
-    /* border-bottom:1px solid #E0E0E0; */
+    display:grid;
+    align-items:center;
+    border-bottom:1px solid #E0E0E0;
 }
-::selection{
-    border:1px solid red;
+.select_calculator > div:first-of-type{
+    cursor:pointer;
+    display:flex;
+    margin:10px 0;
+    justify-content: space-between;
+    padding-left:8px;
 }
-.top_calculator form option{
+.option_calculator{
+    display:none;
+    background:white;
+    position:relative;
+    width: 200px;
+    height: 92px;
+    overflow: hidden; 
+}
+.option_calculator div{
+    border:1px solid #E0E0E0;
+    position:absolute;
+    z-index:100;
+    mix-blend-mode: multiply;
+}
+.option_calculator p{
+    width: 198px;
+    padding-left:8px;
+    text-align:left;
+}
+.option_calculator p:hover{
+    background: #808080;
+    cursor: pointer;
+}
+.bottom_background > div{
+    width: 942px;
+    height: 216px;
+    margin:0 auto;
+}
+.bottom_calculator{
+    height: 216px;
+    background: #FFFFFF;
+    border-radius: 0px 0px 16px 16px;
+    margin:0 auto;
+}
+.bottom_calculator p{
+    padding-left:48px;
+}
+.bottom_calculator p:first-of-type{
+    padding:48px 0 16px 48px;
+}
+.bottom_calculator p:last-of-type{
+    margin-top:4px;
+}
+.mix_mode_bottom_calculator{/*shadow*/
+    height: 216px;
+    width:942px;
+    position: absolute;
+    border-radius: 0px 0px 16px 16px;
+    box-shadow: 0px 80px 40px #391777;
+    mix-blend-mode: overlay;
+}
+
+
+
+/* .calculator_block{
+    display:none;
+} */
+
+
+
+
+/*crypto*/
+.crypto_block{
+    background: #F8F9FB;
+    text-align:center;
+    padding:100px 0;
+    
+}
+.crypto > h2{
+    max-width: 741px;
+    margin:0 auto 64px auto;
+}
+.shadow_crypto{
+    padding:0 5px;
+    display:flex;
+    flex-wrap:wrap;
+    position:absolute;
+}
+.shadow_crypto span{
+    transition:500ms;
+    mix-blend-mode: overlay;
+    box-shadow: 0px 40px 40px #391777;
+    border-radius: 16px;
+    opacity:0.1;
+    width: 330px;
+    height: 433px;
+}
+.crypto > div{
+    display:flex;
+    flex-wrap:wrap;
+    gap:45px;
+    z-index:100;
+}
+.crypto_item{
+    transition:500ms;
+    z-index:10000;
+    background: #FFFFFF;
+    border-radius: 16px;
+    width: 330px;
+    height: 433px;
+}
+.crypto_item > img{
+    margin:48px 0;
+}
+.crypto_item p{
+    padding:0 22px;
+    margin:16px 0 25px 0;
+}
+
+
+
+
+/*features*/
+.features_block{
+    background:#2B076E;
+}
+.features_block > div{
+    background:
+                url(../../Source/Img/features\ background\ 1.svg) no-repeat right bottom,
+                url(../../Source/Img/features\ background\ 2.svg) no-repeat 20% top;          
+                border:1px solid rgba(0,0,0,0);
+}
+.features_block > div > h2{
+    text-align:center;
+    max-width:758px;
+    margin:0 auto;
+    padding:100px 0;/*outer padding*/
+}
+.features_item{
+    max-width:1220px;
+    padding:0 10px;
+    margin:0 auto 0 auto;
+    display:flex;
+}
+.features_item .description{
+    max-width:408px;
+    margin:24px 0 32px 0;
+}
+.features_item:not(:last-of-type){
+    margin-bottom:120px;
+}
+.features_item .text{
+    align-self:center;
+}
+.features_item span{
+    flex:1;
+}
+.features_item:first-of-type{
+    height: 427px;
+}
+.features_item:nth-of-type(2){
+    height: 453px;
+    gap:90px;
+}
+.features_item:last-of-type{
+    height: 334px;
+    margin-bottom:100px;/*outer padding*/
+}
+
+
+
+
+
+
+/*start mining*/
+.start_mining_block{
+    height: 392px;
+    background:url(../../Source/Img/start\ mining\ background.svg) no-repeat 70% bottom,
+               url(../../Source/Img/start\ mining\ background.svg) no-repeat 5% bottom,
+               linear-gradient(#2B076E 100%, #0D0D2B 100%);
+    display:flex;
+}
+.start_mining{
+    background: url(../../Source/Img/start\ mining\ 1.svg) no-repeat right bottom,
+                url(../../Source/Img/start\ mining\ 2.svg) no-repeat,
+              #3671E9;
+    margin:auto;
+    height: 216px;
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    gap:190px;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 48px;
+    border-radius: 16px;
+}
+.start_mining p{
+    margin:16px 0 0 0;
+    max-width:348px;
+}
+.start_mining form{
+    display:flex;
+    width: 566px;
+    align-items:center;
+    justify-content: space-between;
+}
+.start_mining input{
+    width: 374px;
+    height: 42px;
     border:none;
     outline:none;
+    background:none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+.start_mining button{
+    border:none;
+    outline:none;
+    cursor:pointer;
+    width: 152px;
+    height: 55px;
+    background: #FFFFFF;
+    border-radius: 32px;
 }

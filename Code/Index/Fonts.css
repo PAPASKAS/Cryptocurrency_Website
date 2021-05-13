@@ -126,6 +126,18 @@
 
 
 /*calculator*/
+.calculator_block > div > h2{
+    font-family: "Rubik-bold";
+    font-size: 40px;
+    line-height: 150%;
+    color: #FFFFFF;    
+}
+.calculator_block > div > p{
+    font-family: "Rubik";
+    font-size: 18px;
+    line-height: 150%;
+    color: #E0E0E0;    
+}
 .top_calculator h2{
     font-family: "Rubik-bold";
     font-size: 40px;
@@ -134,20 +146,152 @@
 }
 .top_calculator p{
     font-family: "Rubik";
-    font-size: 18px;
+    font-size: 20px;
     line-height: 150%;
-    color: #E0E0E0;    
+    color: #0D0D2B;
 }
 .top_calculator input[type=number]{
     font-family: "Rubik";
     font-size: 20px;
     line-height: 150%;
     color: #0D0D2B;
-    mix-blend-mode: normal;
 }
 .top_calculator input[type=button]{
     font-family: "Rubik-medium";
     font-size: 18px;
     line-height: 150%;
     color: #FFFFFF;    
+}
+.bottom_calculator div{
+    font-family: "Rubik-medium";
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #3671E9;
+}
+.option_calculator div{
+    font-size:30px;
+    color: #0D0D2B;
+}
+.bottom_calculator > p:first-of-type{
+    font-family: "Rubik-medium";
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #3671E9;    
+}
+.bottom_calculator span{
+    font-family: "Rubik-bold";
+    font-size: 32px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: #0D0D2B;
+}
+.bottom_calculator span:last-of-type{
+    color:#3671e9;
+}
+.bottom_calculator p:last-of-type{
+    font-family: "Rubik";
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    color: #828282;    
+}
+
+
+
+
+
+
+/*crypto*/
+.crypto > h2{
+    font-family: "Rubik-bold";
+    font-size: 40px;
+    line-height: 150%;
+    color: #0D0D2B;    
+}
+.crypto span h3{
+    font-family: "Rubik-bold";
+    font-size: 32px;
+    line-height: 150%;
+    color:#0D0D2B;    
+}
+.crypto span span:last-of-type{
+    font-family: "Rubik-medium";
+    font-size: 18px;
+    line-height: 150%;
+    color:#BDBDBD;;
+    opacity: 0.7;
+}
+.crypto p:last-of-type{
+    font-family: "Rubik";
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    color:#828282;    
+}
+
+
+
+/*features*/
+.features_block > div > h2{
+    font-family: "Rubik-bold";
+    font-size: 40px;
+    line-height: 150%;
+    color: #FFFFFF;    
+}
+.features_item .heading{
+    font-family: "Rubik-bold";
+    font-size: 32px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+.features_item .description{
+    font-family: "Rubik";
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    color: #E0E0E0;    
+}
+
+
+
+
+
+
+/*start mining*/
+.start_mining h3{
+    font-family: "Rubik-bold";
+    font-size: 32px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+.start_mining p{
+    font-family: "Rubik";
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+}
+.start_mining form input{
+    font-family: "Rubik";
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.01em;    
+    color: #FFFFFF;
+}
+.start_mining form input::placeholder{
+    font-family: "Rubik";
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.01em;    
+    color: #FFFFFF;
+}
+.start_mining button{
+    font-family: "Rubik-medium";
+    font-size: 18px;
+    line-height: 150%;
+    color: #0D0D2B;
 }
