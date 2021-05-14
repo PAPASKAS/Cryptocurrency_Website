@@ -3,7 +3,7 @@
 }
 
 @font-face {
-    font-family: "inter-semibolds";
+    font-family: "inter-semibold";
     src: url(../../Source/Fonts/Inter-SemiBold.ttf);
 }
 @font-face {
@@ -294,4 +294,46 @@
     font-size: 18px;
     line-height: 150%;
     color: #0D0D2B;
+}
+
+
+
+
+
+
+
+
+
+/*footer*/
+.footer_logo a{
+    font-family: "Inter-semibold";
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+}
+.link_footer p{
+    font-family: "Rubik-medium";
+    font-size: 20px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+.link_footer a{
+    font-family: "Rubik";
+    font-size: 16px;
+    line-height: 38px;
+    color: #E0E0E0;
+}
+.pay_footer{
+    font-family: "Rubik-medium";
+    font-size: 32px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+.bottom_footer span{
+    font-family: "Rubik";
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;    
 }

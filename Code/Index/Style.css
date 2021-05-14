@@ -476,3 +476,53 @@ body{
     background: #FFFFFF;
     border-radius: 32px;
 }
+
+
+
+
+
+
+
+
+
+/*footer*/
+.footer_block{
+    padding:80px 0;/*outer padding*/
+}
+.footer{/*container*/
+    max-width:1220px;
+    padding:0 10px;
+    margin:0 auto;
+}
+.top_footer{
+    display:flex;
+}
+.top_footer > span{
+    flex:1;
+}
+.footer_logo > div{
+    display:flex;
+    gap:16px;
+    align-items:center;
+}
+.link_footer ul{
+    list-style: none;
+    overflow:hidden;
+}
+.link_footer img{/*mob ver*/
+    display:none;
+}
+.pay_footer > div:last-of-type{
+    display:flex;
+    margin-top:40px;
+    gap:24px;
+}
+.bottom_footer{
+    margin-top:125px;/*padding between top and bottom block*/
+    display:flex;
+    justify-content: space-between;
+}
+.bottom_footer > span:last-of-type{
+    display:flex;
+    gap:35px;
+}

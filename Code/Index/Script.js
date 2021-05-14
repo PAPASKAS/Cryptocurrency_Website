@@ -103,3 +103,40 @@ function crypto_out(n){
     document.querySelectorAll("#button_crypto")[n].src = "../../Source/Img/Arrow Right.svg"
     document.querySelectorAll(".shadow_crypto span")[n].style.boxShadow = "0px 40px 40px #391777"
 }
+
+
+
+
+
+//footer
+function footer(n){
+    let footer_var = document.querySelectorAll(".link_footer ul")[n].style.display
+    let open_footer_var = 0
+    let closed_footer_var = 190
+
+    if(footer_var === ""){
+        document.querySelectorAll(".link_footer ul")[n].style.height = "0px"
+        document.querySelectorAll(".link_footer ul")[n].style.display = "block"
+        document.querySelectorAll(".link_footer img")[n].style.transform = "rotate(180deg)"
+
+        let open_footer = setInterval(function(){
+            if(open_footer_var < 190){
+                open_footer_var+=10
+                document.querySelectorAll(".link_footer ul")[n].style.height = open_footer_var + "px"
+            }else{
+                setTimeout(()=>clearInterval(open_footer))
+            }
+        },10)
+    }else{
+        document.querySelectorAll(".link_footer img")[n].style.transform = "rotate(360deg)"
+        let closed_footer = setInterval(function(){
+            if(closed_footer_var > 0){
+                closed_footer_var-=10
+                document.querySelectorAll(".link_footer ul")[n].style.height = closed_footer_var + "px"
+            }else{
+                setTimeout(()=>clearInterval(closed_footer))
+                document.querySelectorAll(".link_footer ul")[n].style.display = ""
+            }
+        },10)
+    }
+}

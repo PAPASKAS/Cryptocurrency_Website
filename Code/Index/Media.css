@@ -78,9 +78,7 @@
 
 /*calculator*/
 @media(max-width:992px){
-    .top_calculator,
-    .bottom_calculator,
-    .top_background > *{
+    .calculator_block{
         display:none
     }
 }
@@ -158,5 +156,59 @@
         .start_mining_block{
             display:none;
         }
+    }
+}
+
+
+
+
+
+
+
+
+/*footer*/
+@media (max-width:992px) {
+    .top_footer{
+        display:grid;
+        grid-auto-flow:row;
+        gap:50px;
+        grid-template-columns: 1fr 1fr;
+    }
+    .top_footer span{
+        margin:0 auto;
+    }
+    .top_footer span:nth-of-type(2){
+        order:1;
+    }
+    .top_footer span:nth-of-type(3){
+        order:2;
+    }
+    .footer_logo{
+        display:none;
+    }
+    .pay_footer{
+        text-align:center;
+        grid-column:1/3;
+    }
+    .pay_footer div{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .link_footer ul{
+        display:none;
+    }
+    .link_footer img{
+        display:block;
+    }
+    .link_footer div{
+        display:flex;
+        align-items:center;
+        cursor:pointer;
+    }
+    .bottom_footer{
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap:50px;
     }
 }
